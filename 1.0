@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+//Recieve Ether THIS WORKS
+contract gimmeSomeEtherReceiving {
+
+receive( ) external payable {}
+
+fallback( ) external payable {}
+      function showmetheBalance() public view returns (uint) { 
+      return address (this).balance; 
+      } 
+  }
